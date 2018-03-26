@@ -1327,6 +1327,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 16px;
     padding-left: 16px;
     -webkit-transition: 0.5s;
+     -webkit-appearance: none;  /*Removes default chrome and safari style*/
+     -moz-appearance: none;  /*Removes default style Firefox*/
     -o-transition: 0.5s;
     transition: 0.5s;
 	border-radius: 4px;
