@@ -2,7 +2,7 @@ var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbyvxFiTQQZ3qxhZicjTvxmeJ7TAd0M9uQ6uM5QMbv2hHVTKJg/exec'
 
 $('#submit-form').on('click', function(e) {
-	NProgress.start();
+	
 	 $("#submit-form").prop('disabled', true);
   e.preventDefault();
   var name = $('#name').val();
@@ -37,6 +37,7 @@ $('#submit-form').on('click', function(e) {
   }
   
   if (($.isNumeric(phone_number)) && phone_number.length >= 8 && name != '' && diet != ''){
+	  NProgress.start();
 	var data = $form.serializeObject();
 	var jqxhr = $.ajax({
     url: url,
