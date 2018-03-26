@@ -8,22 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Ezy Wedding</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by QBOOTSTRAP.COM" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="QBOOTSTRAP.COM" />
+	<meta name="description" content="Edwin & Zhengyi Wedding" />
+	<meta name="keywords" content="edwin, wedding, zhengyi, edwin lee, lee zhengyi, ezylee, ezy, bride, groom" />
+	<meta name="author" content="ezy wedding" />
 
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by QBOOTSTRAP.COM
-		
-	Website: 		http://qbootstrap.com/
-	Email: 			info@qbootstrap.com
-	Twitter: 		http://twitter.com/Q_bootstrap
-	Facebook: 		https://www.facebook.com/Qbootstrap
-	//////////////////////////////////////////////////////
-	 -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -53,6 +41,10 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Magnific popup  -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!--iziToast-->
+	<link rel="stylesheet" href="css/iziToast.min.css">
+	<!--NProgress-->
+	<link rel="stylesheet" href="css/nprogress.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	
@@ -176,7 +168,7 @@
 						<br/>
 						<span class="datewed">
 							<i class="icon-clock2"></i>
-							<span>12:00 PM</span>
+							<span>12:00 PM -</span>
 							<span>16:00 PM</span>
 						</span>
 						
@@ -216,21 +208,41 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+					<form class="form-inline"id="test-form">
+						<div class="col-md-12 col-sm-12 row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label for="name" class="sr-only">Name</label>
+									<input type="name" class="form-control" id="name" name="name" placeholder="Name">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label for="number" class="sr-only">Phone Number</label>
+									<input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Phone Number">
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+						<div class="col-md-12 col-sm-12 row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<select class="custom-select" id="diet" name="diet">
+									  <option disabled selected value>Dietary Restriction</option>
+									  <option value="No Restriction">No Restriction</option>
+									  <option value="Halal">Halal</option>
+									  <option value="Vegetarian">Vegetarian</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label for="remarks" class="sr-only">Remarks</label>
+									<input type="text" class="form-control" id="remarks" name="remarks" placeholder="Any other requests?">
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						<div style="margin:auto;width:50%">
+							<button type="submit" class="btn btn-default btn-block" id="submit-form">I am Attending</button>
 						</div>
 					</form>
 				</div>
@@ -244,7 +256,7 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-						<h2>Our Selfie Photos</h2>
+						<h2>Photos</h2>
 						<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext">
 							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
@@ -521,6 +533,7 @@
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
+	
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -538,6 +551,14 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<!-- jQuery Serialize Objects-->
+	<script src="js/jquery.serializeObject.js"></script>
+	<!--iziToast-->
+	<script src="js/iziToast.min.js" type="text/javascript"></script>
+	<!--NProgress -->
+	<script src='js/nprogress.js'></script>
+	<!-- Submit to google sheet-->
+	<script src="js/form.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
