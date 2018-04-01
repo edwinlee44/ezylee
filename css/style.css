@@ -1345,6 +1345,15 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 20px;
 }
 
+.bottom-space {
+   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-space {
+    margin-bottom: 0px;
+  }
+}
 
 #qbootstrap-started .form-inline .form-group select > option {
   background: #496372;
