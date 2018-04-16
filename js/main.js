@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-	// iPad and iPod detection	
+	/* // iPad and iPod detection	
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -22,8 +22,28 @@
 			isMobile = true;
 		}
 		return isMobile;
+	}; */
+	
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
 	};
-
 
 	// Carousel Feature Slide
 	var testimonialCarousel = function(){
@@ -102,15 +122,49 @@
 
 	// Parallax
 	var parallax = function() {
-		if(isMobile()){
-			$('.first-banner').attr("data-stellar-horizontal-offset",'-400');
-		}
-		if ( !isiPad() || !isiPhone() ) {
+		  if( !isMobile.any() ){
 			$(window).stellar();
+		}else{
+			$('.first-banner').css('background-position','50% 0%');
+			$('.second-banner').css('background-position','40% 0%')
+			$('.third-banner').css('background-position','50% 0%')
 		}
 		
 	};
+	
+	jQuery(document).ready(function() {
+	if(!isMobile.any()){
+		var offset = 250;
+	 
+		var duration = 300;
+		 
+		jQuery(window).scroll(function() {
+		 
+			if (jQuery(this).scrollTop() > offset) {
+			 
+				jQuery('.back-to-top').fadeIn(duration);
+			 
+			} else {
+			 
+				jQuery('.back-to-top').fadeOut(duration);
+			 
+			}
+	 
+		})
 
+		jQuery('.back-to-top').click(function(event) {
+	 
+			event.preventDefault();
+			 
+			jQuery('html, body').animate({scrollTop: 0}, "slow");
+			 
+			return false;
+	 
+		});
+	}
+ 
+	
+});
 
 
 	// Page Nav
