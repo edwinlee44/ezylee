@@ -126,8 +126,8 @@
 			$(window).stellar();
 		}else{
 			$('.first-banner').css('background-position','50% 0%');
-			$('.second-banner').css('background-position','40% 0%')
-			$('.third-banner').css('background-position','50% 0%')
+			$('.second-banner').css('background-position','43% 0%')
+			$('.third-banner').css('background-position','30% 0%')
 		}
 		
 	};
