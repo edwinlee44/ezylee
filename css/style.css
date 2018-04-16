@@ -673,6 +673,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 0;
   width: 100%;
 }
+
 #qbootstrap-countdown .section-heading {
   margin-bottom: 0 !important;
 }
@@ -730,6 +731,21 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 767px) {
+	#qbootstrap-countdown {
+		background-size: initial;
+		position: relative;
+		background-repeat: no-repeat;
+		z-index: 0;
+		width: 100%;
+		height: 700px;
+	}
+	#qbootstrap-countdown .countdown{
+		font-size: 30px;
+	}
+}
+
 #qbootstrap-countdown .display-over {
   z-index: 2;
 }
