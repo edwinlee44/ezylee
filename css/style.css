@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .qbootstrap-cover,
@@ -704,7 +704,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
@@ -1268,7 +1268,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.2); */
 }
 #qbootstrap-started .qbootstrap-heading h2 {
   color: #fff;
@@ -1810,5 +1810,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .ed-font {
 	font-family:"Source Sans Pro", Arial, sans-serif;
+}
+
+.adjust{
+	margin-bottom: 160px;
 }
 /*# sourceMappingURL=style.css.map */
