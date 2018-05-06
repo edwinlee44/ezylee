@@ -1356,7 +1356,13 @@ h1, h2, h3, h4, h5, h6 {
 	 background:rgba(255, 255, 255, 0.2);
 	  
 }
-
+#qbootstrap-started .form-inline .form-group .custom-select {
+	box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+}
 .styled-select {
      overflow: hidden;
     background-image: url(../images/dropdown.png);
