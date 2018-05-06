@@ -681,8 +681,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-countdown .section-heading h2 {
-    font-size: 30px;
+  .second-banner .section-heading {
+    padding-bottom: 10px;
   }
 }
 #qbootstrap-countdown .section-heading .datewed {
@@ -732,14 +732,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	#qbootstrap-countdown {
 		background-size: initial;
 		position: relative;
 		background-repeat: no-repeat;
 		z-index: 0;
 		width: 100%;
-		height: 700px;
 	}
 	#qbootstrap-countdown .countdown{
 		font-size: 30px;
@@ -1260,7 +1259,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-started .section-heading h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #qbootstrap-started .section-heading h3 {
@@ -1807,7 +1806,7 @@ h1, h2, h3, h4, h5, h6 {
 	 
 	color: #ffffff;
 	 
-	background: url("../images/scrollup.png") no-repeat; 
+	background: url("../images/scrollup2.png") no-repeat; 
  
 }
 
