@@ -19,34 +19,32 @@ $('#submit-form').on('click', function(e) {
   $("#submit-form").prop('disabled', true);
   e.preventDefault();
   var name = $('#name').val();
-  var phone_number = $('#phone_number').val();
+  var who = $('#who').val();
   var diet = $('#diet').val();
   var remarks = $('#remarks').val();
   var email = $('#email').val();
   
   $('#name').removeClass('borderClass');
-  $('#phone_number').removeClass('borderClass');
   $('#diet').removeClass('borderClass');
   $('#email').removeClass('borderClass');
   $('#name').nextAll().remove();
-  $('#phone_number').nextAll().remove();
   $('#diet').nextAll().remove();
   $('#email').nextAll().remove();
   
   if (name == ''){
 	  $('#name').addClass('borderClass');
 	  $('#name').after('<span class="help-block">Please enter your name</span>');
-  }
+  }/* 
   if (phone_number == ''){
-	  $('#phone_number').addClass('borderClass');
-	  $('#phone_number').after('<span class="help-block">Please enter your phone number</span>');
+	  $('#who').addClass('borderClass');
+	  $('#who').after('<span class="help-block">Please enter your phone number</span>');
   }else if (!$.isNumeric(phone_number)){
-	  $('#phone_number').addClass('borderClass');
-	  $('#phone_number').after('<span class="help-block">Please enter only numbers e.g. 9123 4567</span>');
+	  $('#who').addClass('borderClass');
+	  $('#who').after('<span class="help-block">Please enter only numbers e.g. 9123 4567</span>');
   }else if (phone_number.length < 8){
-	  $('#phone_number').addClass('borderClass');
-	  $('#phone_number').after('<span class="help-block">Please enter a valid phone number e.g. 9123 4567</span>');
-  }
+	  $('#who').addClass('borderClass');
+	  $('#who').after('<span class="help-block">Please enter a valid phone number e.g. 9123 4567</span>');
+  } */
   if (diet == null){
 	  $('#diet').addClass('borderClass');
 	  $('.styled-select').css('background-position','95% 27%');
@@ -60,7 +58,7 @@ $('#submit-form').on('click', function(e) {
 	  $('#email').after('<span class="help-block">Please enter a correct email format eg. test@example.com</span>');
   }
   
-  if (($.isNumeric(phone_number)) && phone_number.length >= 8 && phone_number != '' && name != '' && diet != '' && email != '' && validEmail(email)){
+  if (name != '' && diet != '' && email != '' && validEmail(email)){
 	  NProgress.start();
 	var data = $form.serializeObject();
 	var jqxhr = $.ajax({
@@ -76,6 +74,7 @@ $('#submit-form').on('click', function(e) {
 				position: 'topCenter',
 				message: 'You have successful registered. See you there.',
 			})
+			$('#test-form')[0].reset();
 		}		
 		if(data.result == 'error'){
 		NProgress.done();
