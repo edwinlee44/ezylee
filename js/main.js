@@ -34,6 +34,9 @@
 		iOS: function() {
 			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 		},
+		anotheriOS: function() {
+			return navigator.userAgent.match(/iPhone|iPod/i);
+		},
 		Opera: function() {
 			return navigator.userAgent.match(/Opera Mini/i);
 		},
@@ -42,6 +45,9 @@
 		},
 		any: function() {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		},
+		scrollUp: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.anotheriOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
 
@@ -133,7 +139,7 @@
 	};
 	
 	jQuery(document).ready(function() {
-	if(!isMobile.any()){
+	if(!isMobile.scrollUp()){
 		var offset = 250;
 	 
 		var duration = 300;
@@ -341,10 +347,10 @@
 		// + minutes + "Minutes " + seconds + "Seconds ";
 
 		// Display the result in an element with id="demo"
-		document.getElementById("days").innerHTML = days +" <small>days</small>";
-		document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
-		document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
-		document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
+		//document.getElementById("days").innerHTML = days +" <small>days</small>";
+		//document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
+		//document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
+		//document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
 
 		// If the count down is finished, write some text 
 		if (distance < 0) {
