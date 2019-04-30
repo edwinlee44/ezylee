@@ -1210,7 +1210,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
   color: #496372;
   display: block;
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 .wedding-events .desc .date {
   display: block;
@@ -1906,7 +1906,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 40px;
     color: #535d69;
     display: block;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 .wedding-events .desc .icon i {
