@@ -214,12 +214,24 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
+
+
+
 @media only screen and (max-width: 767px) {
+#qbootstrap-header .navbar-collapse {
+  border: transparent;
+  background: #FFFFFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+
   #qbootstrap-header .navbar-default {
     margin-top: 0px;
-    padding-right: 15px; /*change 0 to 15px*/
-    padding-left: 15px; /* change 0 to 15 px */
-	background:#fff; /*added background*/
+   /* padding-right: 15px; change 0 to 15px*/
+   /* padding-left: 15px; /* change 0 to 15 px */
+/*background:#fff;*/ /*added background*/
 	position:fixed; /*fix position*/
 	top:0; /*fixed to the top*/
 	margin-top: 0px; /*fixed to the margin-top*/
@@ -1506,7 +1518,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
-  background: #EEAEA5;
+  background: #535d69;
 }
 .qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
   outline: none;
@@ -1520,18 +1532,18 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #EEAEA5;
+  color: #535d69;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #EEAEA5;
+  background: #535d69;
   transition: all .2s ease-out;
 }
 .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #EEAEA5;
+  background: #535d69;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
