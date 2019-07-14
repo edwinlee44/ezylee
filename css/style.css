@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover,
 .qbootstrap-hero {
   position: relative;
-  height: 800px;
+  height: 700px;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
