@@ -1532,18 +1532,18 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #535d69;
+  color: #ffffff /*#535d69;*/;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #535d69;
+  background: #ffffff /*#535d69;*/;
   transition: all .2s ease-out;
 }
 .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #535d69;
+  background: #ffffff /*#535d69;*/;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1850,14 +1850,14 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover .display-tc .holder,.qbootstrap-cover .display-tc h2, .qbootstrap-cover .display-tc p,
 .section-heading h2
 {
-	color:#535d69;
+	color:#ffffff; /*#535d69;*/
 }
 
 
 .qbootstrap-cover .display-tc .holder span:before, 
 .qbootstrap-cover .display-tc .holder span:after 
 {
-	background:#86a3b1;
+	background:#ffffff;
 }
 
 .couple.groom:after {
