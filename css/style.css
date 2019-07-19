@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
   color: #496372;
   display: block;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
@@ -1847,10 +1847,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 250px;
 }
 
-.qbootstrap-cover .display-tc .holder,.qbootstrap-cover .display-tc h2, .qbootstrap-cover .display-tc p,
-.section-heading h2
+.qbootstrap-cover .display-tc .holder,.qbootstrap-cover .display-tc h2, .qbootstrap-cover .display-tc p
 {
 	color:#ffffff; /*#535d69;*/
+}
+
+.section-heading h2
+{
+	color:#535d69;
 }
 
 
