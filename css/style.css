@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   width: 100%;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   clear: both;
 }
 .section-heading.svg-sm-2 .svg {
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
 #qbootstrap-press {
-  padding: 7em 0;
+  padding: 3em 0;
 }
 @media screen and (max-width: 480px) {
   #qbootstrap-couple,
@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-gallery,
   #qbootstrap-testimonials,
   #qbootstrap-press {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 }
 
