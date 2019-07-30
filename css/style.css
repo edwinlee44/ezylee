@@ -1927,6 +1927,18 @@ h1, h2, h3, h4, h5, h6 {
     background: #EEAEA5;
 }
 
+.first-banner {
+	background-position: 50% 0%;
+	background-image: url(../images/FOO_6797.jpg);
+}
+
+@media screen and (max-width: 480px) {
+  .first-banner {
+    background-position: 70% 0%;
+	background-image: url(../images/FOO_6797.jpg);
+  }
+}
+
 @media only screen and (max-width: 768px)  {
 	.date
 	{
