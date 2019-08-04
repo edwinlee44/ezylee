@@ -1928,14 +1928,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .first-banner {
-	background-position: 50% 0%;
-	background-image: url(https://res.cloudinary.com/dflz8rqig/image/upload/w_auto/v1564588262/FOO_6797_tiyeqr.jpg);
+	background-position: bottom;
+	background-image: url(https://res.cloudinary.com/dflz8rqig/image/upload/w_auto/v1564677154/FOO_6795_rgevu5.jpg);
 }
 
 @media screen and (max-width: 480px) {
   .first-banner {
-    background-position: 70% 0% !important;
-	background-image: url(https://res.cloudinary.com/dflz8rqig/image/upload/w_auto/v1564588262/FOO_6797_tiyeqr.jpg);
+    background-position: 60% 0% !important;
+	background-image: url(https://res.cloudinary.com/dflz8rqig/image/upload/w_auto/v1564677154/FOO_6795_rgevu5.jpg);
   }
 }
 
